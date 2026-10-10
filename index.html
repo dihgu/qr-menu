@@ -1,16 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kafe Menü</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#faf6ef">
+  <title>Mekan Okey Kafe | Menü</title>
+  <style>
+    :root{--red:#c51b2a;--ink:#29211f;--muted:#746a64;--cream:#faf6ef;--line:#eadfd2}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+    .wrap{max-width:820px;margin:auto;padding:0 18px}
+    header{text-align:center;padding:30px 18px 20px}
+    .logo{display:block;width:min(330px,88%);height:auto;margin:auto;mix-blend-mode:multiply}
+    .subtitle{font-size:12px;letter-spacing:.23em;text-transform:uppercase;color:var(--muted);margin:15px 0 0}
+    .notice{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px 20px;margin:8px 0 25px}
+    .notice h2{font-size:13px;text-transform:uppercase;letter-spacing:.13em;color:var(--red);margin:0 0 12px}
+    .rate{display:flex;justify-content:space-between;gap:12px;font-weight:650;padding:5px 0}
+    .note{font-size:12px;line-height:1.5;color:var(--muted);margin:12px 0 0}
+    nav{position:sticky;top:0;z-index:5;background:rgba(250,246,239,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .tabs{display:flex;gap:8px;overflow-x:auto;padding:13px 18px;max-width:820px;margin:auto;scrollbar-width:none}
+    .tabs::-webkit-scrollbar{display:none}
+    .tabs a{white-space:nowrap;text-decoration:none;color:var(--red);border:1px solid #e5b7bc;border-radius:30px;padding:9px 14px;font-size:13px;font-weight:650;background:#fff}
+    main{padding-top:5px;padding-bottom:50px}
+    section{margin:25px 0 40px;scroll-margin-top:90px}
+    h2.section-title{font-family:Georgia,serif;color:var(--red);font-size:28px;margin:0 0 13px;border-bottom:1px solid var(--line);padding-bottom:12px}
+    .item{display:flex;gap:15px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+    .item:last-child{border-bottom:0}
+    .photo{width:94px;height:94px;flex-shrink:0;object-fit:cover;border-radius:12px}
+    .info{flex:1;min-width:0}.item-top{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+    .name{font-size:15px;font-weight:680}.price{color:var(--red);font-size:15px;font-weight:750;white-space:nowrap}
+    .desc{color:var(--muted);font-size:13px;line-height:1.5;margin:6px 0 0}
+    footer{text-align:center;color:var(--muted);font-size:12px;padding:0 18px 30px}
+    @media(min-width:700px){.logo{width:390px}.item{padding:19px 0}}
+  </style>
 </head>
 <body>
-  <h1>Menümüze Hoş Geldiniz</h1>
-  <h2>İçecekler</h2>
-  <p>Çay — 30 TL</p>
-  <p>Türk Kahvesi — 80 TL</p>
-  <h2>Yiyecekler</h2>
-  <p>Tost — 120 TL</p>
+  <header><img class="logo" src="logo.png" alt="Mekan Okey Kafe logosu"><p class="subtitle">Menümüz</p></header>
+  <div class="wrap"><div class="notice"><h2>Masa ücretlerimiz</h2><div id="rates"></div><p class="note" id="rate-note"></p></div></div>
+  <nav aria-label="Menü kategorileri"><div class="tabs" id="tabs"></div></nav>
+  <main class="wrap" id="menu"><p>Menü yükleniyor…</p></main>
+  <footer>Fiyatlara KDV dahildir. · Mekan Okey Kafe</footer>
+  <script>
+    const tl = n => `${Number(n).toLocaleString('tr-TR')} ₺`;
+    const el = (tag, className, value) => {const node=document.createElement(tag);if(className)node.className=className;if(value!==undefined)node.textContent=value;return node};
+    fetch('menu.json').then(r=>{if(!r.ok)throw Error('Menü okunamadı');return r.json()}).then(data=>{
+      const rates=document.getElementById('rates');
+      data.masa.forEach(m=>{const row=el('div','rate');row.append(el('span','',m.ad),el('span','',`${tl(m.fiyat)} / ${m.birim}`));rates.append(row)});
+      document.getElementById('rate-note').textContent=data.not;
+      const tabs=document.getElementById('tabs'), menu=document.getElementById('menu');menu.replaceChildren();
+      data.kategoriler.forEach((category,i)=>{
+        const id=`kategori-${i}`,link=el('a','',category.ad);link.href=`#${id}`;tabs.append(link);
+        const section=el('section');section.id=id;section.append(el('h2','section-title',category.ad));
+        category.urunler.forEach(u=>{
+          const row=el('article','item');
+          if(u.foto){const img=el('img','photo');img.src=u.foto;img.alt=u.ad;img.loading='lazy';img.onerror=()=>img.remove();row.append(img)}
+          const info=el('div','info'),top=el('div','item-top');top.append(el('span','name',u.ad),el('span','price',tl(u.fiyat)));info.append(top);
+          if(u.aciklama)info.append(el('p','desc',u.aciklama));row.append(info);section.append(row);
+        });menu.append(section);
+      });
+    }).catch(()=>document.getElementById('menu').textContent='Menü şu anda yüklenemiyor. Lütfen sayfayı yenileyin.');
+  </script>
 </body>
 </html>

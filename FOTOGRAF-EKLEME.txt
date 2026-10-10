@@ -1,0 +1,5 @@
+Fotoğraf eklemek için:
+1. Görseli images klasörüne yükle (örnek: images/kasarli-tost.jpg).
+2. menu.json dosyasında ilgili ürünün nesnesine "foto":"images/kasarli-tost.jpg" alanını ekle.
+Örnek: {"ad":"Kaşarlı Tost","fiyat":200,"aciklama":"...","foto":"images/kasarli-tost.jpg"}
+3. GitHub'a dosyaları kaydet. Fotoğrafı olmayan ürünler normal metin halinde görünür.
