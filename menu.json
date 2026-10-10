@@ -1,46 +1,203 @@
 {
   "masa": [
-    {"ad":"Otomatik Masa", "fiyat":600, "birim":"saat"},
-    {"ad":"Klasik Masa", "fiyat":400, "birim":"saat"}
+    {
+      "ad": "Otomatik Masa",
+      "fiyat": 600,
+      "birim": "saat"
+    },
+    {
+      "ad": "Klasik Masa",
+      "fiyat": 400,
+      "birim": "saat"
+    }
   ],
-  "not":"Siparişlerinizin bedeli toplam masa ücretine dahil edilir.",
+  "not": "Siparişlerinizin bedeli toplam masa ücretine dahil edilir.",
   "kategoriler": [
-    {"ad":"Sıcak İçecekler", "urunler":[
-      {"ad":"Çay","fiyat":40},{"ad":"Fincan Çay","fiyat":70},
-      {"ad":"Oralet Çeşitleri","fiyat":40,"aciklama":"Portakal, kivi, karadut, kuşburnu, elma, muz, kakao"},
-      {"ad":"Türk Kahvesi","fiyat":120},{"ad":"Duble Türk Kahvesi","fiyat":150},{"ad":"Filtre Kahve","fiyat":140}
-    ]},
-    {"ad":"Soğuk İçecekler", "urunler":[
-      {"ad":"Limonata","fiyat":170},{"ad":"Karadut Şerbeti","fiyat":170},{"ad":"Frozen Çeşitleri","fiyat":180},
-      {"ad":"Kola Çeşitleri","fiyat":100},{"ad":"Sade Maden Suyu","fiyat":80},{"ad":"Meyveli Soda","fiyat":90},
-      {"ad":"Ayran","fiyat":90},{"ad":"Fındıklı Atom","fiyat":180},{"ad":"Su","fiyat":40}
-    ]},
-    {"ad":"Espresso Bar / Sıcak", "urunler":[
-      {"ad":"Duble Espresso","fiyat":120,"aciklama":"Küçük fincanda duble ölçü, uzun çekilmiş, yoğun aromalı kahve"},
-      {"ad":"Americano","fiyat":160,"aciklama":"Espresso üzerine sıcak su"},
-      {"ad":"Latte","fiyat":180,"aciklama":"Espresso ve süt kreması"},
-      {"ad":"Cappuccino","fiyat":180,"aciklama":"Espresso ve yoğun süt köpüğü"},
-      {"ad":"Flat White","fiyat":200,"aciklama":"Duble espresso ve süt kreması"},
-      {"ad":"Mocha","fiyat":195,"aciklama":"Espresso, parçalı bitter çikolata, süt"}
-    ]},
-    {"ad":"Espresso Bar / Soğuk", "urunler":[
-      {"ad":"Iced Americano","fiyat":175,"aciklama":"Su ile seyreltilmiş duble espresso ve buz"},
-      {"ad":"Iced Latte","fiyat":210,"aciklama":"Duble espresso, süt, buz"},
-      {"ad":"Iced Mocha","fiyat":230,"aciklama":"Duble espresso, süt, çikolata sosu, buz"},
-      {"ad":"Soğuk Filtre Kahve","fiyat":170,"aciklama":"Taze demlenmiş filtre kahve, buz"},
-      {"ad":"Ekstra espresso / sos / aroma","fiyat":30}
-    ]},
-    {"ad":"Atıştırmalıklar", "urunler":[
-      {"ad":"Kaşarlı Tost","fiyat":200,"aciklama":"Jumbo kare tost ekmeği, çift kaşarlı, yanında garnitür ile"},
-      {"ad":"Karışık Tost","fiyat":240,"aciklama":"Jumbo kare tost ekmeği, kaşarlı ve sucuklu, yanında garnitür ile"},
-      {"ad":"Kavurmalı Tost","fiyat":260,"aciklama":"Jumbo kare tost ekmeği, kaşarlı ve kavurmalı, yanında garnitür ile"},
-      {"ad":"Patates Kızartması","fiyat":200,"aciklama":"İnce çıtır patates kızartması, isteğe göre baharatlı veya peynirli"},
-      {"ad":"Karışık Kızartma Tabağı","fiyat":420,"aciklama":"İnce çıtır patates, soğan halkası, mozarella çubuğu, sosis; 4 kişilik"}
-    ]},
-    {"ad":"Tatlılar", "urunler":[
-      {"ad":"Mono Cheesecake","fiyat":250,"aciklama":"Krem peynirli meyve soslu pasta (180 gr). Limonlu veya frambuazlı"},
-      {"ad":"San Sebastian Cheesecake","fiyat":220,"aciklama":"Karamelize üst katmanlı, yoğun kremsi cheesecake (160 gr)"},
-      {"ad":"Mozaik Pasta","fiyat":190,"aciklama":"Bisküvi parçacıklı, yoğun çikolatalı klasik mozaik pasta (140 gr)"}
-    ]}
+    {
+      "ad": "Sıcak İçecekler",
+      "urunler": [
+        {
+          "ad": "Çay",
+          "fiyat": 40
+        },
+        {
+          "ad": "Fincan Çay",
+          "fiyat": 70
+        },
+        {
+          "ad": "Oralet Çeşitleri",
+          "fiyat": 40,
+          "aciklama": "Portakal, kivi, karadut, kuşburnu, elma, muz, kakao"
+        },
+        {
+          "ad": "Türk Kahvesi",
+          "fiyat": 120
+        },
+        {
+          "ad": "Duble Türk Kahvesi",
+          "fiyat": 150
+        },
+        {
+          "ad": "Filtre Kahve",
+          "fiyat": 140
+        }
+      ]
+    },
+    {
+      "ad": "Soğuk İçecekler",
+      "urunler": [
+        {
+          "ad": "Limonata",
+          "fiyat": 170
+        },
+        {
+          "ad": "Karadut Şerbeti",
+          "fiyat": 170
+        },
+        {
+          "ad": "Frozen Çeşitleri",
+          "fiyat": 180
+        },
+        {
+          "ad": "Kola Çeşitleri",
+          "fiyat": 100
+        },
+        {
+          "ad": "Sade Maden Suyu",
+          "fiyat": 80
+        },
+        {
+          "ad": "Meyveli Soda",
+          "fiyat": 90
+        },
+        {
+          "ad": "Ayran",
+          "fiyat": 90
+        },
+        {
+          "ad": "Fındıklı Atom",
+          "fiyat": 180
+        },
+        {
+          "ad": "Su",
+          "fiyat": 40
+        }
+      ]
+    },
+    {
+      "ad": "Espresso Bar / Sıcak",
+      "urunler": [
+        {
+          "ad": "Duble Espresso",
+          "fiyat": 120,
+          "aciklama": "Küçük fincanda duble ölçü, uzun çekilmiş, yoğun aromalı kahve"
+        },
+        {
+          "ad": "Americano",
+          "fiyat": 160,
+          "aciklama": "Espresso üzerine sıcak su"
+        },
+        {
+          "ad": "Latte",
+          "fiyat": 180,
+          "aciklama": "Espresso ve süt kreması"
+        },
+        {
+          "ad": "Cappuccino",
+          "fiyat": 180,
+          "aciklama": "Espresso ve yoğun süt köpüğü"
+        },
+        {
+          "ad": "Flat White",
+          "fiyat": 200,
+          "aciklama": "Duble espresso ve süt kreması"
+        },
+        {
+          "ad": "Mocha",
+          "fiyat": 195,
+          "aciklama": "Espresso, parçalı bitter çikolata, süt"
+        }
+      ]
+    },
+    {
+      "ad": "Espresso Bar / Soğuk",
+      "urunler": [
+        {
+          "ad": "Iced Americano",
+          "fiyat": 175,
+          "aciklama": "Su ile seyreltilmiş duble espresso ve buz"
+        },
+        {
+          "ad": "Iced Latte",
+          "fiyat": 210,
+          "aciklama": "Duble espresso, süt, buz"
+        },
+        {
+          "ad": "Iced Mocha",
+          "fiyat": 230,
+          "aciklama": "Duble espresso, süt, çikolata sosu, buz"
+        },
+        {
+          "ad": "Soğuk Filtre Kahve",
+          "fiyat": 170,
+          "aciklama": "Taze demlenmiş filtre kahve, buz"
+        },
+        {
+          "ad": "Ekstra espresso / sos / aroma",
+          "fiyat": 30
+        }
+      ]
+    },
+    {
+      "ad": "Atıştırmalıklar",
+      "urunler": [
+        {
+          "ad": "Kaşarlı Tost",
+          "fiyat": 200,
+          "aciklama": "Jumbo kare tost ekmeği, çift kaşarlı, yanında garnitür ile"
+        },
+        {
+          "ad": "Karışık Tost",
+          "fiyat": 240,
+          "aciklama": "Jumbo kare tost ekmeği, kaşarlı ve sucuklu, yanında garnitür ile"
+        },
+        {
+          "ad": "Kavurmalı Tost",
+          "fiyat": 260,
+          "aciklama": "Jumbo kare tost ekmeği, kaşarlı ve kavurmalı, yanında garnitür ile"
+        },
+        {
+          "ad": "Patates Kızartması",
+          "fiyat": 200,
+          "aciklama": "İnce çıtır patates kızartması, isteğe göre baharatlı veya peynirli"
+        },
+        {
+          "ad": "Karışık Kızartma Tabağı",
+          "fiyat": 420,
+          "aciklama": "İnce çıtır patates, soğan halkası, mozarella çubuğu, sosis; 4 kişilik",
+          "foto": "images/karisik-kizartma.jpg"
+        }
+      ]
+    },
+    {
+      "ad": "Tatlılar",
+      "urunler": [
+        {
+          "ad": "Mono Cheesecake",
+          "fiyat": 250,
+          "aciklama": "Krem peynirli meyve soslu pasta (180 gr). Limonlu veya frambuazlı"
+        },
+        {
+          "ad": "San Sebastian Cheesecake",
+          "fiyat": 220,
+          "aciklama": "Karamelize üst katmanlı, yoğun kremsi cheesecake (160 gr)"
+        },
+        {
+          "ad": "Mozaik Pasta",
+          "fiyat": 190,
+          "aciklama": "Bisküvi parçacıklı, yoğun çikolatalı klasik mozaik pasta (140 gr)"
+        }
+      ]
+    }
   ]
 }
