@@ -118,8 +118,8 @@
         },
         {
           "ad": "Mocha",
-          "fiyat": 215,
-          "aciklama": "Espresso, parçalı bitter çikolata, süt"
+          "fiyat": 230,
+          "aciklama": "Duble espresso, parçalı bitter çikolata, süt"
         }
       ]
     },
@@ -158,17 +158,17 @@
         {
           "ad": "Kaşarlı Tost",
           "fiyat": 230,
-          "aciklama": "Jumbo kare tost ekmeği, çift kaşarlı, yanında garnitür ile"
+          "aciklama": "Jumbo kare tost ekmeği, çift kaşarlı, yanında salatalık, domates dilimleri ve zeytin ile"
         },
         {
           "ad": "Karışık Tost",
           "fiyat": 260,
-          "aciklama": "Jumbo kare tost ekmeği, kaşarlı ve sucuklu, yanında garnitür ile"
+          "aciklama": "Jumbo kare tost ekmeği, kaşarlı ve sucuklu, yanında salatalık, domates dilimleri ve zeytin ile"
         },
         {
           "ad": "Kavurmalı Tost",
           "fiyat": 295,
-          "aciklama": "Jumbo kare tost ekmeği, kaşarlı ve kavurmalı, yanında garnitür ile"
+          "aciklama": "Jumbo kare tost ekmeği, kaşarlı ve kavurmalı, yanında salatalık, domates dilimleri ve zeytin ile"
         },
         {
           "ad": "Patates Kızartması",
