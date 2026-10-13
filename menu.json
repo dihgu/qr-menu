@@ -75,8 +75,12 @@
           "fiyat": 90
         },
         {
+          "ad": "Churchill",
+          "fiyat": 150
+        },
+        {
           "ad": "Fındıklı Atom",
-          "fiyat": 180
+          "fiyat": 200
         },
         {
           "ad": "Su",
@@ -89,32 +93,32 @@
       "urunler": [
         {
           "ad": "Duble Espresso",
-          "fiyat": 120,
+          "fiyat": 150,
           "aciklama": "Küçük fincanda duble ölçü, uzun çekilmiş, yoğun aromalı kahve"
         },
         {
           "ad": "Americano",
-          "fiyat": 160,
+          "fiyat": 180,
           "aciklama": "Espresso üzerine sıcak su"
         },
         {
           "ad": "Latte",
-          "fiyat": 180,
+          "fiyat": 200,
           "aciklama": "Espresso ve süt kreması"
         },
         {
           "ad": "Cappuccino",
-          "fiyat": 180,
+          "fiyat": 200,
           "aciklama": "Espresso ve yoğun süt köpüğü"
         },
         {
           "ad": "Flat White",
-          "fiyat": 200,
+          "fiyat": 220,
           "aciklama": "Duble espresso ve süt kreması"
         },
         {
           "ad": "Mocha",
-          "fiyat": 195,
+          "fiyat": 215,
           "aciklama": "Espresso, parçalı bitter çikolata, süt"
         }
       ]
@@ -124,17 +128,17 @@
       "urunler": [
         {
           "ad": "Iced Americano",
-          "fiyat": 175,
+          "fiyat": 195,
           "aciklama": "Su ile seyreltilmiş duble espresso ve buz"
         },
         {
           "ad": "Iced Latte",
-          "fiyat": 210,
+          "fiyat": 230,
           "aciklama": "Duble espresso, süt, buz"
         },
         {
           "ad": "Iced Mocha",
-          "fiyat": 230,
+          "fiyat": 250,
           "aciklama": "Duble espresso, süt, çikolata sosu, buz"
         },
         {
@@ -153,28 +157,28 @@
       "urunler": [
         {
           "ad": "Kaşarlı Tost",
-          "fiyat": 200,
+          "fiyat": 230,
           "aciklama": "Jumbo kare tost ekmeği, çift kaşarlı, yanında garnitür ile"
         },
         {
           "ad": "Karışık Tost",
-          "fiyat": 240,
+          "fiyat": 260,
           "aciklama": "Jumbo kare tost ekmeği, kaşarlı ve sucuklu, yanında garnitür ile"
         },
         {
           "ad": "Kavurmalı Tost",
-          "fiyat": 260,
+          "fiyat": 295,
           "aciklama": "Jumbo kare tost ekmeği, kaşarlı ve kavurmalı, yanında garnitür ile"
         },
         {
           "ad": "Patates Kızartması",
-          "fiyat": 200,
+          "fiyat": 230,
           "aciklama": "İnce çıtır patates kızartması, isteğe göre baharatlı veya peynirli"
         },
         {
           "ad": "Karışık Kızartma Tabağı",
-          "fiyat": 420,
-          "aciklama": "İnce çıtır patates, soğan halkası, mozarella çubuğu, sosis; 4 kişilik",
+          "fiyat": 460,
+          "aciklama": "İnce çıtır patates, soğan halkası, mozzarella çubuğu ve sosis. 4 kişiliktir, iki porsiyon halinde servis edilir.",
           "foto": "images/karisik-kizartma.jpg"
         }
       ]
@@ -184,17 +188,17 @@
       "urunler": [
         {
           "ad": "Mono Cheesecake",
-          "fiyat": 250,
+          "fiyat": 290,
           "aciklama": "Krem peynirli meyve soslu pasta (180 gr). Limonlu veya frambuazlı"
         },
         {
           "ad": "San Sebastian Cheesecake",
-          "fiyat": 220,
+          "fiyat": 295,
           "aciklama": "Karamelize üst katmanlı, yoğun kremsi cheesecake (160 gr)"
         },
         {
           "ad": "Mozaik Pasta",
-          "fiyat": 190,
+          "fiyat": 230,
           "aciklama": "Bisküvi parçacıklı, yoğun çikolatalı klasik mozaik pasta (140 gr)"
         }
       ]
